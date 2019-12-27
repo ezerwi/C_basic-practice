@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(void) {
+
+int i=0;
+int sum=0;
+int anynum;
+
+printf("This is a test for repeatations.\n");
+printf("The first is a test of 'while'\n\n");
+printf("Input any number you want : \n\n");
+scanf("%d", anynum);
+
+while(i <= anynum)
+{
+	sum = i+sum;
+	i ++;
+}
+
+printf("The Number is %d\n", anynum);
+
+printf("The second is a test of 'do while'\n");
+printf("Input any number you want : \n\n");
+scanf("%d", anynum);
+
+do
+{
+	sum = i + sum;
+	i++;
+} while(i<=anynum);
+
+printf("The Number is %d\n", anynum);
+printf("Finish!\n");
+
+	return 0;
+}
